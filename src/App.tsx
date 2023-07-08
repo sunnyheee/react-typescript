@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Router from "./screens/Router";
+import Router from "./Router";
 
 const Container = styled.div`
   background-color: ${(props) => props.theme.bgColor};
