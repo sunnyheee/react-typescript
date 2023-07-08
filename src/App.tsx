@@ -23,7 +23,6 @@ function App() {
       <form action="#">
         <button onClick={onClick}>click me!</button>
       </form>
-      <Router />
     </Container>
   );
 }

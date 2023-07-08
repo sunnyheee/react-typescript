@@ -3,6 +3,8 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./theme";
+import { RouterProvider } from "react-router-dom";
+import router from "./screens/Router";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -10,6 +12,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={darkTheme}>
+      <RouterProvider router={router}></RouterProvider>
       <App />
     </ThemeProvider>
   </React.StrictMode>
